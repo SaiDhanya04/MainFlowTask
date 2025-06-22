@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resort & Restaurant</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to right, #fff5e6, #ffeedd);
+      color: #333;
+    }
+
+    header {
+      background-color: #2e2e2e;
+      color: white;
+      padding: 1rem 2rem;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .logo i {
+      margin-right: 8px;
+      color: #f4c542;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      position: relative;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem;
+      display: block;
+    }
+
+    nav li:hover > ul {
+      display: block;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 2.5rem;
+      left: 0;
+      background-color: #444;
+      padding: 0.5rem;
+      min-width: 150px;
+    }
+
+    nav ul ul li {
+      width: 100%;
+    }
+
+    nav ul ul a:hover {
+      background-color: #555;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .cta-btn {
+      background-color: #f4c542;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #e0b62d;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      background-color: #fffaf2;
+    }
+
+    .feature {
+      background: #ffffffd0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .feature h2 {
+      margin-bottom: 1rem;
+      color: #c79828;
+    }
+
+    .feature p {
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #2e2e2e;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        float: none;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+
+      nav li {
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .cta-btn {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Logo and Navigation -->
+  <header>
+    <div class="logo"><i class="fas fa-utensils"></i>Sunset Paradise</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Menu</a>
+          <ul>
+            <li><a href="#">Starters</a></li>
+            <li><a href="#">Main Course</a></li>
+            <li><a href="#">Desserts</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Resort</a>
+          <ul>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Activities</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Book Now</a></li>
+      </ul>
+    </nav>
+    <div style="clear: both;"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Escape to Paradise</h1>
+    <p>Luxury resort with world-class dining and breathtaking views.</p>
+    <button class="cta-btn">Book Your Stay</button>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <h2>Gourmet Dining</h2>
+      <p>Experience mouth-watering dishes crafted by top chefs using local ingredients.</p>
+    </div>
+    <div class="feature">
+      <h2>Oceanfront Rooms</h2>
+      <p>Wake up to the sound of waves in our elegant, fully-serviced suites.</p>
+    </div>
+    <div class="feature">
+      <h2>Relax & Rejuvenate</h2>
+      <p>Enjoy spa treatments, yoga sessions, and wellness experiences.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sunset Paradise | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
