@@ -1,6 +1,6 @@
 # MainFlow Internship Project 
 
-Task 1: Landing Interface
+📂 Task 1: Landing Interface
 Built a clean and structured landing page using HTML and CSS during my internship with MainFlow. The page includes a responsive navigation bar and footer for improved user navigation.
 
 🔐 Task 2: PHP User Auth System
